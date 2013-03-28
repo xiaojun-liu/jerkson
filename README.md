@@ -1,7 +1,7 @@
 # Jerkson for Scala 2.10 #
 
 [Jerkson](https://github.com/codahale/jerkson) has only been published for
-Scala versions as high as 2.9.1 and does not support streaming iteration.
+Scala versions as high as 2.9.1.
 
 ## Differences from upstream Jerkson ##
 
@@ -15,10 +15,12 @@ Scala versions as high as 2.9.1 and does not support streaming iteration.
 - This version of Jerkson is hosted on
 [Maven Central](http://central.maven.org/maven2/com/yuvimasory/).
 - From sbt:
+
   ```scala
   libraryDependencies += "com.yuvimasory" %% "jerkson" % "0.6.0"
   ```
 - From Maven:
+
   ```xml
   <dependency>
     <groupId>com.yuvimasory</groupId>
