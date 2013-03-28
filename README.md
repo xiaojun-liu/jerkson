@@ -13,7 +13,7 @@ Scala versions as high as 2.9.1.
 ## Install ##
 
 - This version of Jerkson is hosted on
-[Maven Central](http://central.maven.org/maven2/com/yuvimasory/).
+  [Maven Central](http://central.maven.org/maven2/com/yuvimasory/jerkson_2.10).
 - From sbt:
 
   ```scala
