@@ -9,6 +9,8 @@ licenses := Seq(
   ("The MIT License", url("http://codahale.com/mit.txt"))
 )
 
+homepage := Some(url("https://github.com/ymasory/jerkson"))
+
 scmInfo := Some(
   ScmInfo(
     url("https://github.com/ymasory/jerkson"),
