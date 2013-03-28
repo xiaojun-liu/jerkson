@@ -35,7 +35,7 @@ Scala versions as high as 2.9.1.
 $ cd jerkson
 $ ./sbt compile
 ```
-  
+
 ## Future plans ##
 
 Jerkson is legacy.
@@ -44,5 +44,5 @@ I suggest you switch to one of the many excellent Scala Json libraries.
 
 ## Contact ##
 
-Repo maintained by [Yuvi Masory](http://yuvimasory.com).  
-[ymasory@gmail.com](ymasory@gmail.com)
+- Maintained by [Yuvi Masory](http://yuvimasory.com).
+- [ymasory@gmail.com](ymasory@gmail.com)
