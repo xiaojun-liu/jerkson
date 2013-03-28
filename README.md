@@ -1,4 +1,4 @@
-# Jerkson for Scala 2.10 #
+# Jerkson for Scala 2.10 [![Build Status](http://ci.yuvimasory.com/job/jerkson/badge/icon)](http://ci.yuvimasory.com/job/jerkson/) #
 
 [Jerkson](https://github.com/codahale/jerkson) has only been published for
 Scala versions as high as 2.9.1.
