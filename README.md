@@ -1,99 +1,51 @@
-Jerkson
--------
+# Jerkson for Scala 2.10 #
 
-*Because I think you should use JSON.*
+[Jerkson](https://github.com/codahale/jerkson) has only been published for
+Scala versions as high as 2.9.1 and does not support streaming iteration.
 
-Jerkson is a Scala wrapper for [Jackson](http://jackson.codehaus.org/) which
-brings Scala's ease-of-use to Jackson's features.
+## Differences from upstream Jerkson ##
 
+- sbt instead of Maven.
+- Tests have been deleted, since sbt cannot run
+  [simplespec](https://github.com/SimpleFinance/simplespec) tests.
+- Minor tweaks to get compilation in 2.10.
 
-Requirements
-------------
+## Install ##
 
-* Scala 2.8.2 or 2.9.1
-* Jackson 1.9.x
-
-
-Setting Up Your Project
------------------------
-
-Go ahead and add Jerkson as a dependency:
-
-```xml
-<repositories>
-  <repository>
-    <id>repo.codahale.com</id>
-    <url>http://repo.codahale.com</url>
-  </repository>
-</repositories>
-
-<dependencies>
+- This version of Jerkson is hosted on
+[Maven Central](http://central.maven.org/maven2/com/yuvimasory/).
+- From sbt:
+  ```scala
+  libraryDependencies += "com.yuvimasory" %% "jerkson" % "0.6.0"
+  ```
+- From Maven:
+  ```xml
   <dependency>
-    <groupId>com.codahale</groupId>
-    <artifactId>jerkson_${scala.version}</artifactId>
-    <version>0.5.0</version>
+    <groupId>com.yuvimasory</groupId>
+    <artifactId>jerkson_2.10</artifactId>
+    <version>0.6.0</version>
   </dependency>
-</dependencies>
-```
+  ```
 
+## Build ##
 
-Parsing JSON
-------------
+- Just compile:
+  ```sh
+  $ cd jerkson
+  $ ./sbt compile
+  ```
+- Publish:
+  ```sh
+  $ ./sbt publish
+  ```
+  
+## Future plans ##
 
-```scala
-import com.codahale.jerkson.Json._
+Jerkson is legacy.
+I won't do any further work except providing the 2.10 jars.
+I suggest you switch to one of the many excellent Scala Json libraries.
 
-// Parse JSON arrays
-parse[List[Int]]("[1,2,3]") //=> List(1,2,3)
+## Contact ##
 
-// Parse JSON objects
-parse[Map[String, Int]]("""{"one":1,"two":2}""") //=> Map("one"->1,"two"->2)
-
-// Parse JSON objects as case classes
-// (Parsing case classes isn't supported in the REPL.)
-case class Person(id: Long, name: String)
-parse[Person]("""{"id":1,"name":"Coda"}""") //=> Person(1,"Coda")
-
-// Parse streaming arrays of things
-for (person <- stream[Person](inputStream)) {
-  println("New person: " + person)
-}
-```
-
-For more examples, check out the [specs](https://github.com/codahale/jerkson/blob/master/src/test/scala/com/codahale/jerkson/tests/).
-
-
-Generating JSON
----------------
-
-```scala
-// Generate JSON arrays
-generate(List(1, 2, 3)) //=> [1,2,3]
-
-// Generate JSON objects
-generate(Map("one"->1, "two"->"dos")) //=> {"one":1,"two":"dos"}
-```
-
-For more examples, check out the [specs](https://github.com/codahale/jerkson/blob/master/src/test/scala/com/codahale/jerkson/tests/).
-
-
-Handling `snake_case` Field Names
-=================================
-
-```scala
-case class Person(firstName: String, lastName: String)
-
-@JsonSnakeCase
-case class Snake(firstName: String, lastName: String)
-
-generate(Person("Coda", "Hale"))   //=> {"firstName": "Coda","lastName":"Hale"}
-generate(Snake("Windey", "Mover")) //=> {"first_name": "Windey","last_name":"Mover"}
-```
-
-
-License
--------
-
-Copyright (c) 2010-2011 Coda Hale
-
-Published under The MIT License, see LICENSE
+Repo maintained by [Yuvi Masory](http://yuvimasory.com).  
+[ymasory@gmail.com](ymasory@gmail.com)
