@@ -17,7 +17,7 @@ Scala versions as high as 2.9.1.
 - From sbt:
 
   ```scala
-  libraryDependencies += "com.yuvimasory" %% "jerkson" % "0.6.0"
+  libraryDependencies += "com.yuvimasory" %% "jerkson" % "0.6.1"
   ```
 - From Maven:
 
@@ -25,7 +25,7 @@ Scala versions as high as 2.9.1.
   <dependency>
     <groupId>com.yuvimasory</groupId>
     <artifactId>jerkson_2.10</artifactId>
-    <version>0.6.0</version>
+    <version>0.6.1</version>
   </dependency>
   ```
 

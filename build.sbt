@@ -3,7 +3,7 @@ name := "jerkson"
 
 organization := "com.yuvimasory"
 
-version := "0.6.1-SNAPSHOT"
+version := "0.6.2-SNAPSHOT"
 
 licenses := Seq(
   ("The MIT License", url("http://codahale.com/mit.txt"))
