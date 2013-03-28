@@ -32,13 +32,10 @@ Scala versions as high as 2.9.1.
 ## Build ##
 
 - Just compile:
+
   ```sh
   $ cd jerkson
   $ ./sbt compile
-  ```
-- Publish:
-  ```sh
-  $ ./sbt publish
   ```
   
 ## Future plans ##
