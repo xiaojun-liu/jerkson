@@ -1,4 +1,4 @@
-# Jerkson for Scala 2.10 [![Build Status](http://ci.yuvimasory.com/job/jerkson/badge/icon)](http://ci.yuvimasory.com/job/jerkson/) #
+# Jerkson for Scala 2.10 #
 
 [Jerkson](https://github.com/codahale/jerkson) has only been published for
 Scala versions as high as 2.9.1.
@@ -15,17 +15,17 @@ Scala versions as high as 2.9.1.
 ## Install ##
 
 - This version of Jerkson is hosted on
-  [Maven Central](http://central.maven.org/maven2/com/yuvimasory/jerkson_2.10).
+  [Maven Central](http://central.maven.org/maven2/com/cloudphysics/jerkson_2.10).
 - From sbt:
 
   ```scala
-  libraryDependencies += "com.yuvimasory" %% "jerkson" % "0.6.1"
+  libraryDependencies += "com.cloudphysics %% "jerkson" % "0.6.1"
   ```
 - From Maven:
 
   ```xml
   <dependency>
-    <groupId>com.yuvimasory</groupId>
+    <groupId>com.cloudphysics</groupId>
     <artifactId>jerkson_2.10</artifactId>
     <version>0.6.1</version>
   </dependency>
@@ -41,10 +41,9 @@ $ ./sbt compile
 ## Future plans ##
 
 Jerkson is legacy.
-I won't do any further work except providing the 2.10 jars.
-I suggest you switch to one of the many excellent Scala Json libraries.
+We won't do any further work except providing the 2.10 jars.
+We suggest you switch to one of the many excellent Scala Json libraries.
 
 ## Contact ##
 
-- Maintained by [Yuvi Masory](http://yuvimasory.com).
-- [ymasory@gmail.com](ymasory@gmail.com)
+[opensource@cloudphysics.com](opensource@cloudphysics.com)

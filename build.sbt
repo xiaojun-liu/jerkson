@@ -1,7 +1,7 @@
 /* basic project info */
 name := "jerkson"
 
-organization := "com.yuvimasory"
+organization := "com.cloudphysics"
 
 version := "0.6.2-SNAPSHOT"
 
@@ -9,13 +9,13 @@ licenses := Seq(
   ("The MIT License", url("http://codahale.com/mit.txt"))
 )
 
-homepage := Some(url("https://github.com/ymasory/jerkson"))
+homepage := Some(url("https://github.com/cphylabs/jerkson"))
 
 scmInfo := Some(
   ScmInfo(
-    url("https://github.com/ymasory/jerkson"),
-    "scm:git:https://github.com/ymasory/jerkson.git",
-    Some("scm:git:git@github.com:ymasory/jerkson.git")
+    url("https://github.com/cphylabs/jerkson"),
+    "scm:git:https://github.com/cphylabs/jerkson.git",
+    Some("scm:git:git@github.com:cphylabs/jerkson.git")
   )
 )
 
@@ -96,13 +96,9 @@ pomIncludeRepository := { _ => false }
 pomExtra := (
   <developers>
     <developer>
-      <id>ymasory</id>
-      <name>Yuvi Masory</name>
-      <email>ymasory@gmail.com</email>
+      <id>cphylabs</id>
+      <name>CloudPhysics Inc</name>
+      <email>opensource@cloudphysics.com</email>
     </developer>
   </developers>
 )
-
-// Josh Suereth's step-by-step guide to publishing on sonatype
-// http://www.scala-sbt.org/using_sonatype.html
-
