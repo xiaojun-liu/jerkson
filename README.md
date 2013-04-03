@@ -9,6 +9,8 @@ Scala versions as high as 2.9.1.
 - Tests have been deleted, since sbt cannot run
   [simplespec](https://github.com/SimpleFinance/simplespec) tests.
 - Minor tweaks to get compilation in 2.10.
+- [Streaming iteration patch](https://github.com/ymasory/jerkson/pull/1), if you
+  use version 0.6.2.
 
 ## Install ##
 
