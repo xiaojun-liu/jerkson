@@ -35,7 +35,7 @@ Scala versions as high as 2.9.1.
 
 ```sh
 $ cd jerkson
-$ ./sbt compile
+$ sbt compile
 ```
 
 ## Future plans ##
