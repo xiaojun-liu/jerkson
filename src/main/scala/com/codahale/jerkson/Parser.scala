@@ -71,6 +71,15 @@ trait Parser extends Factory {
   }
 
   /**
+  * Parse a streaming JSON object, returning an iterator of its field name
+  * and value pairs.
+  */
+ def fields(input: Reader): Iterator[(String, JValue)] = {
+   val parser = factory.createJsonParser(input)
+   new FieldIterator(parser)
+ }
+
+  /**
    * Returns true if the given class is deserializable.
    */
   def canDeserialize[A](implicit mf: Manifest[A]) = mapper.canDeserialize(Types.build(mapper.getTypeFactory, mf))
