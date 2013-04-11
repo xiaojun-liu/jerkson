@@ -10,7 +10,8 @@ Scala versions as high as 2.9.1.
   [simplespec](https://github.com/SimpleFinance/simplespec) tests.
 - Minor tweaks to get compilation in 2.10.
 - [Streaming iteration patch](https://github.com/ymasory/jerkson/pull/1), if you
-  use version 0.6.2.
+  use version 0.6.2+.
+- [Streaming field iterator patch](https://github.com/cphylabs/jerkson/commit/85076b9daeeb3ba3c3c3f0fbdd60deaf09fb275b), if you use version 0.6.3+.
 
 ## Install ##
 
