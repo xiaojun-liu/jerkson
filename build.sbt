@@ -3,7 +3,7 @@ name := "jerkson"
 
 organization := "com.cloudphysics"
 
-version := "0.6.3-SNAPSHOT"
+version := "0.6.3"
 
 licenses := Seq(
   ("The MIT License", url("http://codahale.com/mit.txt"))
