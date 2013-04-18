@@ -1,7 +1,7 @@
 /* basic project info */
 name := "jerkson"
 
-organization := "com.cloudphysics"
+organization := "org.cphylabs"
 
 version := "0.6.4-SNAPSHOT"
 
