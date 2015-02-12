@@ -22,6 +22,8 @@ scmInfo := Some(
 /* scala versions and options */
 scalaVersion := "2.10.1"
 
+crossScalaVersions := Seq("2.10.1", "2.10.4")
+
 // These options will be used for *all* versions.
 scalacOptions ++= Seq(
   // "-deprecation",
